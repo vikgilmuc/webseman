@@ -1,0 +1,371 @@
+
+@font-face{
+    font-family : Lato;
+    src : url('../font/Lato-Reg.otf') format('otf'),
+          url('../font/Lato-Reg.ttf') format('truetype');
+        
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+/**
+ * local.css
+ * Use this file for customizations to your subtheme.
+ *
+ * There are no style definitions on this file. Add your styles and delete the unused ones.
+ *
+ */
+/*reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*end reset */
+
+html {height:100%}
+
+body {height:100%; font-family:"Lato"}
+
+#page {}
+
+h1, h2, h3, h4, h5, h6 {}
+
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+
+h1.title {}
+
+p {font-family:Lato}
+
+a{text-decoration: none; color: white}, a:link, a:visited {}
+a:hover   {color: rgb(248,207,65)}
+a:focus, a:active, a.active {}
+
+/* Override common styling after reset.css and groundwork.css */
+ul, ol {}
+ul {}
+ol {}
+ul ul {}
+ol ol {}
+
+dl {}
+dl dt {}
+dd {}
+
+hr {}
+fieldset {}
+
+table {}
+th {}
+thead th      {}
+th,td,caption {}
+tbody tr:nth-child(even) td,
+tbody tr.even td  {  border:1px ;color:black; }
+tr.odd {}
+tr.even {}
+tfoot       {}
+caption {}
+.sticky-header th, .sticky-table th {}
+
+img {}
+
+blockquote  {}
+strong,dfn  {}
+em,dfn      {}
+sup, sub    {}
+
+abbr,
+acronym     {}
+address     {}
+del         {}
+
+pre         {}
+pre,code,tt {}
+
+
+
+/**
+ *  5. SECTOR, ZONES and CONTAINERS
+ */
+
+
+#page-wrapper {}
+#page {}
+
+/* SECTORS - Sections that contain different zones and regions */
+
+#sector-header {min-height:75px; height: 20%; }
+#sector-content { min-height:300px; }
+#sector-extras {}
+#sector-footer {}
+
+/* ZONES - Full Width - Outside the container */
+/* Tip: Add your backgrounds here for a full width background */
+.noceda-zone-wrapper {} /* target all zones */
+#topbar-zone {}
+#header-zone {}
+#navbar-zone {}
+#main-zone {display: inline-block; width: 62%}
+#appendix-zone {}
+#supplement-zone {display:none}
+#footer-zone {}
+
+/* CONTAINER - the 960px container */
+/* Tip: Add your backgrounds here for backgrounds within the container */
+.container-24 {min-width:800px; width: 960px; margin-left:auto;
+  margin-right:auto; margin-top: 10px;
+  max-width: 90%;} /* target containers of all sections */
+#topbar-section.container-24 {}
+#header-section.container-24 {}
+#navbar-section.container-24 {}
+#billboard-section.container-24 {}
+#main.container-24 {}
+#appendix-section.container-24 {}
+#supplement-section.container-24 {}
+#footer-section.container-24 {}
+
+/* Inner Divs and Regions */
+#header-inner  {}
+#main .columns {}
+
+.noceda-region {} /* target all regions */
+.region {} /* target all regions */
+header{height:100%}
+#topbar {}
+/* Branding */
+#branding {display: inline-block ; width: 150px; height: 100%; float: left}
+#header {vertical-align: top; height: 100%; border-radius: 10px;  overflow: hidden}
+
+
+
+#logo-image {height:66%; text-align: center; margin: 5px 0px}
+#logo-image img{max-height:90%}
+
+div#name-and-slogan {height:33%; text-align: center}
+
+#name-and-slogan h1{font-size: 1.5vmin; color: rgb(52,73,94); margin: 0px}
+#name-and-slogan a{font-size: 1.5vmin; color: rgb(52,73,94); margin: 0px}
+
+h1#site-name a {}
+
+h2#site-slogan {}
+
+/* Header */
+#header img {width:100%} 
+
+
+#main-navigation {border-radius: 10px;}
+#main-navigation ul {margin-left: 10px}
+
+#main-navigation ul li {vertical-align: middle; padding: 15px; font-weight: 500; float: left}
+
+#main-navigation ul li a { margin: 0px 0px 30px 0px}
+#main-navigation ul li a.nivel1 {display: block!important;display: none;position: relative
+}
+
+#main-navigation {width: 100%;  background-color: rgb(52,72,94);   vertical-align: middle; color: white ; height: 50px}
+#main-navigation  ul li ul{ display: none; }
+#main-navigation  ul li a.nivel1:hover,#main-navigation  ul li:hover a.nivel1{position: relative }
+#main-navigation  ul li a.nivel1:hover ul,#main-navigation  ul li:hover ul{ display: block; position: absolute; background-color: rgb(52,72,94); border-radius: 10px;}
+
+
+#main-navigation ul li ul:after{   content: "";
+position: absolute;
+top: -10px;
+left: 33px;
+border-style: solid;
+border-width: 0 10px 10px;
+border-color: rgb(52,72,94) transparent;
+display: block;
+width: 0;
+z-index: 1;}
+
+
+.filler 
+{
+    width:100%;
+    display: inline-block;
+    height:0px;
+}
+
+
+
+#billboard {}
+#highlighted {}
+#main-content {  background-color: rgb(236,240,241);border-radius: 10px; padding: 0px; margin: 10px 0 0 0; min-height:330px }
+article{padding: 15px; color:rgb(52,73,94); clear: both} 
+article p{font-size: 14px; } 
+article strong{font-weight: bold; } 
+article img {width: 150px; }
+article h1 {font-size: 32px; font-weight: bold} 
+article h2 {font-size: 28px; font-weight: bold} 
+#main-content h1 {padding : 0px}
+#main-content article:nth-of-type(odd) img{
+ clear: left; float: left;padding: 0 15px 0 0
+}
+#main-content article:nth-of-type(even) img{
+clear: right; float: right;padding: 0  0 0 15px
+}
+
+#main-content p {padding:5px 0px;text-align: justify;} 
+#main-content a {color: black} 
+#main-content article:nth-of-type(even) p{
+text-align: justify}
+
+#main-content article:nth-of-type(even) h1{text-align: right}
+#main-content article:nth-of-type(even) strong{text-align: right}
+#main-content article:nth-of-type(even) h2 {text-align: right}
+
+
+
+
+#sidebar {float: right;display:inline-block; width: 37%}
+#sidebar img {max-width: 100%; border-radius: 10px; margin: 10px 0px}
+#sidebar article { border-radius: 10px; background-color: rgb(236,240,241)}
+
+
+#aside {}
+#appendix {}
+#supplement {}
+#footer {background-color: rgb(236,240,241); color:rgb(52,73,94); border-radius: 10px; width: 100%}
+#footer a{color:rgb(52,73,94)}
+#footer a:hover{color: rgb(248,207,65)}
+#attribution {}
+
+#main-content-inner {}
+
+table{ width:100%; border: 1px solid rgb(52,73,94); } 
+td, th{text-align: right;padding: 5px 0px}
+
+/* Navigational links */
+
+
+#sector-footer ul li {display: inline-block; vertical-align: middle; padding: 5px 20px}
+#sector-footer ul {text-align: justify}
+#sector-footer p {text-align: center; padding: 0 0 15px 0}
+
+
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen  and (min-device-width : 320px)  and (max-device-width : 768px) {
+
+
+.container-24 {min-width:320px; width: 100%;  margin-left:auto;
+  margin-right:auto; margin-top: 10px;
+  max-width: 90%;} 
+  
+#sector-header {min-height:75px; height: 15%; }
+#branding {display: inline-block ; width: 37%; height: 100%}
+#header {display: inline-block ; vertical-align: top; height: 100%; width: 61%; border-radius: 10px;}
+#logo-image {height:50%; text-align: center; margin: 0px 0px}
+#logo-image img{height: 100%;max-height:90%}
+#name-and-slogan h1{font-size: 0.5vmin; color: rgb(52,73,94); margin: 0px}
+#name-and-slogan a{font-size: 0.5vmin; color: rgb(52,73,94); margin: 0px}
+#header {vertical-align: top; height: 100%; border-radius: 10px;  overflow: hidden}
+#header img {height:100%; width: auto} 
+
+#main-navigation {border-radius: 0px;width: 100%; height:100%; float: right;  vertical-align: middle; color: white;  background-color: rgb(255,255,255) }
+#main-navigation ul {text-align: left ;margin-left: 10px}
+
+#main-navigation ul li {display: inline-block; vertical-align: middle; padding: 15px 5px 0 5px ; margin: 5px; background-color: rgb(52,72,94); border-radius: 0px; text-align: center; border-radius: 5px; font-size: 10px}
+#main-navigation ul li:last-child {display: none}
+
+article h1 {font-size: 25px; font-weight: bold} 
+
+
+#sidebar {display : none} 
+#main-zone {display: block; width: 100%; }
+
+
+#supplement-zone {display:none }
+
+#main-content {  background-color: rgb(236,240,241); clear: both}  
+
+
+#supplement-zone {display:none;  position: absolute; top: 100px; left: 50px; width:100px; height:100px}
+#googlemap {}
+}
+/* iPads (portrait and landscape) ----------- */
+/*-----------------------------------------------------------------------------------------------------------------------*/
+@media only screen  and (min-device-width : 768px)  and (max-device-width : 1024px) {
+
+#branding {display: inline-block ; width: 37%; height: 100%}
+#header {display: inline-block ; vertical-align: top; height: 100%; width: 61%; border-radius: 10px;}
+
+#name-and-slogan h1{font-size: 0.5vmin; color: rgb(52,73,94); margin: 0px}
+#name-and-slogan a{font-size: 0.5vmin; color: rgb(52,73,94); margin: 0px}
+
+
+#main-navigation {width: 37%; height:200px; float: left; background-color: rgb(52,72,94); vertical-align: middle; color: white }
+#main-navigation {  background-color: rgb(255,255,255);  border-radius: 0px; vertical-align: middle; color: white ; height: 50px}
+#main-navigation ul {text-align: left ;margin-left: 10px}
+
+#main-navigation ul li {display: block; vertical-align: middle; padding: 5px; margin: 10px; background-color: rgb(52,72,94); border-radius: 0px; text-align: center; padding:10px; border-radius: 10px}
+#main-navigation ul li:last-child {display: none}
+
+
+#sidebar {display : none} 
+#main-zone {display: inline-block; width: 100%}
+
+#googlemap {width:200px; height:200px}
+#main-content {width: 61%; display: inline;  float: left }
+
+#supplement-zone {display:block;  position: absolute; top: 400px; left: 50px
+   }
+
+   }
+
+
